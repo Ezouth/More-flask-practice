@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1> Hello this is some stuff about me! </h1>
+  <h2> my name is {{ name }} </h2>
+    <p> here are some things about me </p>
+  <ul>
+      {% for k, v in person.items() %}
+        <p> {{ k }} {{ v }} </p>
+      {% endfor %}
+  </ul>
+  <p> {{ myList }} </p>
+{% endblock %}

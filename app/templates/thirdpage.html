@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1> Hello! This page is a little about dogs. </h1>
+  <h2> Dogs are the best </h2>
+  <ul>
+      {% for k, v in dogs.items() %}
+        <p> {{ k }} {{ v }} </p>
+      {% endfor %}
+  </ul>
+  <p> {{dogsList}} </p>
+{% endblock %}

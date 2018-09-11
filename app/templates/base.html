@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The base page</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('second_page_func') }}">About me</a></li>
+        <li><a href="{{ url_for('thirdpage_func') }}">Dogs!!</a></li>
+        <li><a href="{{ url_for('my_redirect') }}">Redirect</a></li>
+      </ul>
+    </nav>
+    {%block content %}
+     {%endblock %}
+  </body>
+</html>
